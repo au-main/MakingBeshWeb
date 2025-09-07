@@ -54,16 +54,17 @@
             overflow: hidden;
             box-shadow: 0 8px 25px rgba(0,0,0,0.2);
             border: 5px solid #D2B48C;
-			display: flex;
-    		justify-content: center;
-    		align-items: center;
     		background: #000;
+			isolation: isolate;
+    		contain: layout;
+
         }
 		#unity-canvas {
-			width: 101% !important;
-    		height: 101% !important;
+			width: 100% !important;
+    		height: 100% !important;
 			display: block;
-			object-fit: contain;
+			image-rendering: crisp-edges;
+ 		    image-rendering: pixelated;
 		}
         #unity-build-title {
     		display: none !important;
