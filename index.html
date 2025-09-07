@@ -48,7 +48,7 @@
         #unity-container {
             margin: 0 auto;
             width: 1000px;
-            height: 700px;
+            aspect-ratio: 16/9;
             position: relative;
             border-radius: 12px;
             overflow: hidden;
@@ -63,7 +63,7 @@
 			width: 100% !important;
     		height: 100% !important;
 			display: block;
-			z-index: 1;
+			object-fit: contain;
 		}
         #unity-build-title {
     		display: none !important;
@@ -71,6 +71,10 @@
 		#unity-footer {
     		position: relative;
     		z-index: 10;
+		}
+		#unity-container.unity-desktop,
+		#unity-container.unity-mobile {
+			height: auto !important;
 		}
         .content-section {
             display: flex;
